@@ -1,0 +1,24 @@
+## Future optimizations
+- Dockerize the application.
+- Code sniffers.
+- Distributed tracing or at least logging of important information.
+- Keeping indexes on the DB for the most used data for reading.
+- DB partitioning with high volume of data.
+- Add more transactions where it could be needed in case of multiple users operating with the same entity at the same time
+- Caching for frequently used data for reading.
+- More tests to cover all the edge cases.
+- Maintain AAA (Arrange, Act, Assert) pattern for the tests.
+- Consider implementing DDD architecture with growing of domains amount and domains complexity itself.
+- Maintain services decomposition for independence and scalability.
+- Maintain separation of concerns.
+- Implementing CQRS pattern to separate the read and write operations for better performance.
+- <a href="https://api-platform.com/docs/create-client/">API Platform client<a/> to have better/full experience with the application.
+- Symfony constraints to validate complex data structures.
+- WebSockets for real-time location updates.
+- Advanced Geospatial Queries.
+- Using enumerations , or interfaces for the constants, or for the values that I didnt place to constant yet.
+- Individual user authentication / JWT authentication
+- Message broker + Symfony scheduler. For example scheduler checks for client/trips inactivity and sends a message to RabbitMQ, which is then processed by a Symfony worker service to handle that with running a command to simulate some clients.
+- Conduct load testing to see how the application behaves under heavy load
+- API rate limiting.
+- Maintain a clear documentation.
